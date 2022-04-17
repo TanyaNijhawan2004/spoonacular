@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>final_task</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+</head>
+<body style="overflow-x:hidden;">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="logo.svg" width="100" height="80" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Select Cuisines
+                </a>
+                <div class="dropdown-menu" id="cuisines" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#" id="british" >British</a>
+                  <a class="dropdown-item" href="#" id="chinese" >Chinese</a>
+                  <a class="dropdown-item" href="#" id="european" >European </a>
+                  <a class="dropdown-item" href="#" id="french" >French</a>
+                  <a class="dropdown-item" href="#" id="greek" >Greek</a>
+                  <a class="dropdown-item" href="#" id="indian" >Indian</a>
+                  <a class="dropdown-item" href="#" id="italian" >Italian</a>
+                  <a class="dropdown-item" href="#" id="japanese" >Japanese</a>
+                  <a class="dropdown-item" href="#" id="korean" >Korean</a>
+                  <a class="dropdown-item" href="#" id="mexican" >Mexican</a>
+                </div>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 form-search" style="padding-right: 12px;">
+              <input class="form-control mr-sm-2" id="cusinesearch"  type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" id="search" type="submit">Search</button>
+            </form>
+               <button type="button" class="btn-sign  btn btn-success" style="margin-top: 8px;margin-bottom: 8px;">SIGN UP</button>
+        </div>
+       </nav>
+
+       <div class="header" style="margin-left: 2rem;">
+        <h1 class="heading">
+          spoonacular
+        </h1>
+        <br>
+        <h3>Search different dishes in particular cusine to know their nutrients.  </h3>
+      </div>
+  
+<div>
+  <div class="row" id="cuisinetype">
+
+  </div>
+  <div class="row" style="margin-bottom: 16px;" id="cusinedetails">
+
+  </div>
+</div>
+       
+      
+</body>
+<script type="module" src="index.js"></script>
+</html>
