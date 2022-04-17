@@ -213,6 +213,7 @@ korean.addEventListener("click",function(){
 const search_cusine = "https://api.spoonacular.com/recipes/complexSearch?apiKey=04ea0a1c13d3402fbfd0711a9c8953d6&addRecipeInformation=true&addRecipeNutrition=true";
 search.addEventListener("click",function(){
     // cusinetype.innerHTML="<h4>Search : "+cusinesearch.value+"</h4>";
+   
     fetchsearch();
 });
 const fetchsearch = async () => {
