@@ -191,28 +191,28 @@ korean.addEventListener("click",function(){
     fetchdish()
 
 });
-mexican.addEventListener("click",function(){
-    const fetchdish=async()=>{
-        const response=await fetch("https://api.spoonacular.com/recipes/complexSearch?cuisine=mexican&apiKey="+api+"&addRecipeInformation=true&addRecipeNutrition=true");
-        cusinedata=[];
-        if(response.status>=200 && response.status<300){
-               const a=await response.json();
-               console.log(a);
-               cusinedata=a.results;
+// mexican.addEventListener("click",function(){
+//     const fetchdish=async()=>{
+//         const response=await fetch("https://api.spoonacular.com/recipes/complexSearch?cuisine=mexican&apiKey="+api+"&addRecipeInformation=true&addRecipeNutrition=true");
+//         cusinedata=[];
+//         if(response.status>=200 && response.status<300){
+//                const a=await response.json();
+//                console.log(a);
+//                cusinedata=a.results;
     
-        }else{
-            console.log(response.status,response.statustext);
-        }
+//         }else{
+//             console.log(response.status,response.statustext);
+//         }
     
-        display();
+//         display();
     
-    }
-    fetchdish()
+//     }
+//     fetchdish()
 
-});
+// });
 const search_cusine = "https://api.spoonacular.com/recipes/complexSearch?apiKey=04ea0a1c13d3402fbfd0711a9c8953d6&addRecipeInformation=true&addRecipeNutrition=true";
 search.addEventListener("click",function(){
-    cusinetype.innerHTML="<h4>Search : "+cusinesearch.value+"</h4>";
+    // cusinetype.innerHTML="<h4>Search : "+cusinesearch.value+"</h4>";
     fetchsearch();
 });
 const fetchsearch = async () => {
